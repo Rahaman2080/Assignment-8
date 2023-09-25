@@ -19,7 +19,7 @@ const Header = () => {
                     {links}
                     </ul>
                 </div>
-                <img className="w-48" src="src/assets/Logo.png" alt="" />
+                <img className="w-48" src="https://i.ibb.co/C78J2dJ/Logo.png" alt="" />
             </div>
             <div className="navbar-end hidden lg:flex">
                 <ul className="menu menu-horizontal px-1">

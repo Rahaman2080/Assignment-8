@@ -1,6 +1,7 @@
 import Swal from 'sweetalert2';
 import {BiDollar} from 'react-icons/bi';
 import PropTypes from 'prop-types';
+import { Link } from 'react-router-dom';
 
 const Detail = ({detail}) => {
     const {id, img, title, description, price, text_color, card_bg} = detail || {};
@@ -43,10 +44,12 @@ const Detail = ({detail}) => {
         <div className='space-y-5 text-justify'>
             <div className='relative'>
             <img className='w-[100vw] bg-opacity-50' src={img} alt="" />
+            <div className='absolute w-full py-8 bottom-0 bg-slate-900 bg-opacity-50'>
+                <button onClick={AddToDonation} style={{backgroundColor: text_color}} className='py-1 px-3 rounded-md text-white ml-5 font-semibold'><p className='flex justify-center items-center'>Donate: <BiDollar></BiDollar> {price}</p></button>
             </div>
-            <div className='relative left-5 bottom-20'>
-                <button onClick={AddToDonation} style={{backgroundColor: text_color}} className='py-1 px-3 rounded-md text-white font-semibold'><p className='flex justify-center items-center'>Donate: <BiDollar></BiDollar> {price}</p></button>
             </div>
+        
+            
             <p className='font-bold text-xl' style={{color: text_color}}>{title}</p>
             <p>{description}</p>
         </div>

@@ -13,6 +13,7 @@ import Root from './Components/Root/Root';
 import Home from './Components/Home/Home';
 import CardDetails from './Components/CardDetails/CardDetails';
 import Donation from './Components/Donation/Donation';
+import Statistic from './Components/Statistic/Statistic';
 
 
 const router = createBrowserRouter([
@@ -33,6 +34,9 @@ const router = createBrowserRouter([
       {
         path: "/donation",
         element: <Donation></Donation>
+      },
+      {
+        path: "/statistics",
       }
     ]
   }

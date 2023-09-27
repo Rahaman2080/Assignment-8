@@ -2,7 +2,7 @@ const Banner = () => {
     return (
         <div className="relative">
               <div className="relative">
-                <img className='opacity-40 w-full' src="src/assets/Rectangle 4281.png" alt="" />
+                <img className='opacity-40 w-full' src="https://i.ibb.co/yNyWkQ4/Rectangle-4281.png" alt="" />
                 </div>
                 <div className='absolute w-full top-10 md:top-20 lg:top-40'>
                 <h2 className=" text-xl md:text-2xl lg:text-3xl font-bold text-center">I Grow By Helping People In Need</h2>

@@ -5,7 +5,6 @@ import PropTypes from 'prop-types';
 const DonationCard = ({ donate }) => {
     const { id, img, category, price, title, card_bg, category_bg, text_color } = donate;
 
-
     return (
         <div style={{backgroundColor: card_bg}} className="relative flex w-11/12 max-w-[48rem] flex-row rounded-lg shadow-md m-4">
             <div  className="relative m-0 w-2/5 shrink-0 overflow-hidden rounded-xl rounded-r-none bg-white bg-clip-border text-gray-700">

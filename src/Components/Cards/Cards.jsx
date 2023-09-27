@@ -2,7 +2,6 @@ import { useEffect } from "react";
 import { useState } from "react";
 import Card from "./Card";
 
-
 const Cards = () => {
     const [cards, setCards] = useState([]);
 

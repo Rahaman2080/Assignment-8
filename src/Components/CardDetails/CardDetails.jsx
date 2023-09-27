@@ -2,9 +2,6 @@ import { useEffect, useState } from 'react';
 import { useLoaderData, useParams } from 'react-router-dom';
 import Detail from './Detail';
 
-
-
-
 const CardDetails = () => {
     const [details, setDetails] = useState({})
 

@@ -1,6 +1,5 @@
 import { NavLink } from "react-router-dom";
 
-
 const Header = () => {
     const links = <>
         <li><NavLink to="/"
@@ -18,7 +17,6 @@ const Header = () => {
                 isPending ? "pending" : isActive ? "text-red-500 font-semibold underline" : ""
             }>Statistics
         </NavLink></li>
-
     </>
     return (
         <div className="navbar max-w-5xl mx-auto">

@@ -1,7 +1,6 @@
 import Swal from 'sweetalert2';
 import {BiDollar} from 'react-icons/bi';
 import PropTypes from 'prop-types';
-import { Link } from 'react-router-dom';
 
 const Detail = ({detail}) => {
     const {id, img, title, description, price, text_color, card_bg} = detail || {};

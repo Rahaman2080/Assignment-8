@@ -16,6 +16,7 @@ import Donation from './Components/Donation/Donation';
 import Statistic from './Components/Statistic/Statistic';
 
 
+
 const router = createBrowserRouter([
   {
     path: "/",
@@ -37,6 +38,7 @@ const router = createBrowserRouter([
       },
       {
         path: "/statistics",
+        element: <Statistic></Statistic>
       }
     ]
   }

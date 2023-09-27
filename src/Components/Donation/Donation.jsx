@@ -4,7 +4,6 @@ import DonationCard from "./DonationCard";
 const Donation = () => {
     const [donated, setDonated] = useState([]);
     const [notFound, setNotFound] = useState(false);
-    // const [isShow, setIsShow] = useState(false);
     const [dataLength, setDataLength] = useState(4)
 
     useEffect(() => {

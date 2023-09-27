@@ -8,7 +8,7 @@ const Card = ({ card }) => {
         <div>
             <Link to={`/cards/${id}`}>
                 <div style={{ backgroundColor: card_bg }} className="w-72 lg:w-60 m-4">
-                    <img src={img} alt="" />
+                    <img className='h-40 w-full' src={img} alt="" />
                     <div className="p-3 my-3">
                         <p style={{ color: text_color, backgroundColor: category_bg }} className="text-base font-semibold text-center w-24 rounded-md px-2">{category}</p>
                         <h3 style={{ color: text_color }} className="font-bold text-base">{title}</h3>

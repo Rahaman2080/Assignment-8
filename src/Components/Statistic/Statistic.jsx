@@ -5,26 +5,20 @@ import { PieChart, Pie, Cell, } from 'recharts';
 const Statistic = () => {
 
     const [getDonatedData, setGetDonatedData] = useState([]);
-    const [getTotalData, setGetTotalData] = useState([])
-    
+    const [getTotalData, setGetTotalData] = useState('')
     
     useEffect(()=>{
-        fetch('/card.json')
-        .then(res => res.json())
-        .then(data => setGetTotalData(data));
-        
         const donations = JSON.parse(localStorage.getItem('donation'));
-        setGetDonatedData(donations)
+        const donateTotal = donations.length;
+        setGetDonatedData(donateTotal)
+
+        const subTotal = 12- donateTotal;
+        setGetTotalData(subTotal)
     },[]);
     
-    const myDonation = getDonatedData.length;
-    const totalCard = getTotalData.length;
-    // console.log(myDonation);
-    // console.log(totalCard);
-
     const data = [
-        { name: 'Total donation', value: totalCard },
-        { name: 'My donation', value: myDonation }
+        { name: 'Total donation', value: getTotalData },
+        { name: 'My donation', value: getDonatedData }
        
       ];
       
